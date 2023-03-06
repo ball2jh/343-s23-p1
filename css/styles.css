@@ -41,6 +41,57 @@ body {
     top: 5em;
 }
 
+#event-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#events h1 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+#events p {
+    margin-right: 1.5em;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px black;
+}
+
+#meeting-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#meetings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#events img {
+    position: absolute;
+    z-index: -1;
+    right: 20%;
+    bottom: 0;
+    top:15em;
+    width: 50%;
+    height: auto;
+}
+
+#footer {
+    position: relative;
+    display: flex;
+    margin-top: 20em;
+    font-size: 0.25em;
+    flex-direction: row;
+}
 
 .desktop-nav {
     position: fixed;
@@ -129,6 +180,14 @@ body {
     color: white;
 }
 
+@media (max-width: 650px) {
+    #event-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
 @media (max-width: 1400px) {
     .desktop-nav p {
         display: none;
