@@ -5,10 +5,42 @@ body {
 }
 
 .content {
+    position: relative;
     color: white;
-    font-size: 150px;
-    overflow-wrap: break-word;
+    font-size: 2rem;
+    margin-top: 5em;
+    margin-left: 1em;
+    overflow: hidden;
 }
+
+.content a {
+    text-decoration: none;
+    color: white;
+}
+
+#index-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#index-text img {
+    position: relative;
+    width: 25%;
+    height: 25%;
+    margin-top: 5em;
+    margin-left: 1rem;
+    padding: 0;
+}
+
+#index-background {
+    position: relative;
+    width: 100%;
+    left: 10%;
+    top: 5em;
+}
+
 
 .desktop-nav {
     position: fixed;
@@ -19,6 +51,7 @@ body {
     display: flex;
     background-color: black;
     color: white;
+    z-index: 1;
 }
 
 .desktop-nav img {
@@ -28,9 +61,10 @@ body {
 }
 
 .desktop-nav p {
-    margin-top: 1.1em;
+    margin-top: 0.98em;
     margin-left: 0.5em;
     padding: 0;
+    width: 10%;
     font-weight: 300;
     font-size: 2.5rem;
     display: flex;
@@ -42,8 +76,8 @@ body {
     padding: 0;
     list-style: none;
     display: flex;
-    width: 100%;
     justify-content: center;
+    margin-right: calc(60% - 700px);
 }
 
 .desktop-nav li {
@@ -80,13 +114,28 @@ body {
 	display: none;
 }
 
-@media (max-width: 1300px) {
+#about img {
+    width: 64px;
+    height: 64px;
+}
+
+#about li {
+    list-style: none;
+    margin: 0.5em;
+}
+
+#about a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 1400px) {
     .desktop-nav p {
         display: none;
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1150px) {
     .desktop-nav {
         display: none;
     }
@@ -100,6 +149,7 @@ body {
         top: 0;
         background-color: black;
         right: 0;
+        z-index: 1;
     }
 
     .mobile-nav ul {
@@ -113,7 +163,10 @@ body {
     .mobile-nav ul li {
         display: block;
         text-align: center;
+        width: 100%;
         font-size: 1.5rem;
+        padding: 0.5em;
+        margin-top: 0.5em;
     }
 
     .mobile-nav p {
@@ -123,6 +176,7 @@ body {
     }
     
     .mobile-nav a {
+        display: block;
         text-decoration: none;
         color: white;
     }
@@ -156,5 +210,11 @@ body {
     [id^="menu"]:checked + a {
         display: block;
     }
+
+    .content p {
+        font-size: 1.5rem;
+    }
+
+
 }
 
