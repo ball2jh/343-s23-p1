@@ -21,7 +21,8 @@ body {
 #index img {
     position: relative;
     display: flex;
-    margin-bottom: 6em;
+    margin-bottom: 0em;
+    top: 0;
 }
 
 #index-text {
