@@ -1,0 +1,160 @@
+body {
+    background-color: black;
+    font-family: Inter, sans-serif;
+    font-weight: 100;
+}
+
+.content {
+    color: white;
+    font-size: 150px;
+    overflow-wrap: break-word;
+}
+
+.desktop-nav {
+    position: fixed;
+    font-size: 2rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    color: white;
+}
+
+.desktop-nav img {
+    width: 100px;
+    height: 100px;
+    margin: 0.5em;
+}
+
+.desktop-nav p {
+    margin-top: 1.1em;
+    margin-left: 0.5em;
+    padding: 0;
+    font-weight: 300;
+    font-size: 2.5rem;
+    display: flex;
+    white-space: nowrap;
+}
+
+.desktop-nav ul {
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.desktop-nav li {
+    margin: 0 20px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.desktop-nav ul li a {
+    text-decoration: none;
+    color: white;
+    vertical-align: baseline;
+}
+
+.desktop-nav ul li:not(#current):hover {
+    text-decoration: underline;
+    font-weight: 300;
+}
+
+.desktop-nav ul li#current:hover {
+    text-decoration: underline;
+}
+
+.desktop-nav #current {
+    font-weight: bold;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.toggle, [id^=drop] {
+	display: none;
+}
+
+@media (max-width: 1300px) {
+    .desktop-nav p {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background-color: black;
+        right: 0;
+    }
+
+    .mobile-nav ul {
+        list-style: none;
+        padding: 0;
+        color: white;
+        width: 100%;
+        right: 0;
+    }
+
+    .mobile-nav ul li {
+        display: block;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .mobile-nav p {
+        display: block;
+        color: white;
+        font-size: 1.5rem;
+    }
+    
+    .mobile-nav a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .toggle {
+		display: block;	
+		color:white;
+		font-size:17px;
+		text-decoration:none;
+		border:none; 
+	}
+
+    .toggle + a, .menu {
+		display: none;
+	}
+
+    [id^=drop]:checked + ul {
+		display: block;
+	}
+
+    [id^=drop]:checked + ul + p {
+        display: none;
+    }
+
+    .mobile-nav img {
+        width: 64px;
+        height: 64px;
+        margin: 0.5em;
+    }
+
+    [id^="menu"]:checked + a {
+        display: block;
+    }
+}
+
