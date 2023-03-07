@@ -231,12 +231,16 @@ div #meetings ul {
     margin: 0;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 800px) {
     #event-info {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+    }
+
+    #meeting-info {
+        display: block;
     }
 }
 
