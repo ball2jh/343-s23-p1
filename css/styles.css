@@ -18,19 +18,19 @@ body {
     color: white;
 }
 
-#index img {
-    position: relative;
-    display: flex;
-    margin-bottom: 0em;
-    top: 0;
-}
-
 #index-text {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     margin-left: 20%;
+}
+
+#index img {
+    position: relative;
+    display: flex;
+    margin-bottom: 0em;
+    top: 0;
 }
 
 #index-text img {
@@ -96,9 +96,39 @@ body {
 #footer {
     position: relative;
     display: flex;
-    margin-top: 20em;
+    margin-top: 100em;
     font-size: 0.25em;
     flex-direction: row;
+}
+
+#name {
+    font-weight: 100;
+}
+#leadership-words {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2em;
+}
+#leadership-table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2em;
+}
+
+#leadership-picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2em;
+}
+
+#leadership-picture p {
+    font-size: 1rem;
 }
 
 .desktop-nav {
