@@ -4,6 +4,14 @@ body {
     font-weight: 100;
 }
 
+.desktop-nav h2 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 1.4em;
+    white-space: nowrap;
+}
+
 .content {
     position: relative;
     color: white;
@@ -63,7 +71,7 @@ body {
     padding: 0;
 }
 
-#events p {
+#events li {
     margin-right: 1.5em;
     font-weight: 300;
     text-shadow: 1px 1px 1px black;
@@ -83,22 +91,14 @@ body {
     align-items: center;
 }
 
-#events img {
+#pieces {
     position: absolute;
     z-index: -1;
     right: 20%;
     bottom: 0;
-    top:15em;
+    top:35em;
     width: 50%;
     height: auto;
-}
-
-#footer {
-    position: relative;
-    display: flex;
-    margin-top: 100em;
-    font-size: 0.25em;
-    flex-direction: row;
 }
 
 #name {
@@ -218,6 +218,18 @@ body {
     color: white;
 }
 
+div #tournaments ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+div #meetings ul {
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+}
+
 @media (max-width: 650px) {
     #event-info {
         display: flex;
@@ -226,13 +238,8 @@ body {
         align-items: center;
     }
 }
-@media (max-width: 1400px) {
-    .desktop-nav p {
-        display: none;
-    }
-}
 
-@media (max-width: 1150px) {
+@media (max-width: 1180px) {
     .desktop-nav {
         display: none;
     }
