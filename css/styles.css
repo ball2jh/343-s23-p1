@@ -101,9 +101,10 @@ body {
     height: auto;
 }
 
-#name {
+.name-text {
     font-weight: 100;
 }
+
 #leadership-words {
     display: flex;
     flex-direction: column;
